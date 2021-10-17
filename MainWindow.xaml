@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoDAI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="708" Width="986">
     <Grid>
-        
+        <Image HorizontalAlignment="Left" Height="678" VerticalAlignment="Top" Width="978" Source="img/fondoEntrada.jpg" Margin="0,0,0,-1"/>
+        <TextBox x:Name="txIDUsuario" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" Margin="254,252,0,0" FontSize="14"/>
+        <TextBox x:Name="txContrasena" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" Margin="254,309,0,0" FontSize="14"/>
+        <Label Content="Inicio de sesión" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,118,0,0" Height="90" Width="428" FontSize="58" FontWeight="Bold" IsTabStop="True" Foreground="#FD020000"/>
+        <Button Content="¡Regístrate para comenzar a rentar!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="219" Margin="654,415,0,0"  FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Background="White" Click="Button_Registrar"/>
+        <Label Content="¿Aún no estás registrad@?" HorizontalAlignment="Left" Margin="644,367,0,0" VerticalAlignment="Top" Width="242" Foreground="#FD000000" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="70,309,0,0" VerticalAlignment="Top" Width="174" Foreground="#FD000000" FontSize="18" FontWeight="Bold"/>
+        <Label Content="ID de usuario" HorizontalAlignment="Left" Margin="70,254,0,0" VerticalAlignment="Top" Width="173" Foreground="#FD020000" FontSize="18" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="190" Margin="618,155,0,0" VerticalAlignment="Top" Width="314" Source="img/logo.png"/>
+        <Button Content="Click para iniciar sesión" HorizontalAlignment="Left" Margin="254,380,0,0" VerticalAlignment="Top" Width="244" Height="26" Click="Button_Iniciar_Sesion" FontSize="14" FontWeight="Bold" Background="White" BorderBrush="#FF131313"/>
     </Grid>
 </Window>

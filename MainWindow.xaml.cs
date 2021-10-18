@@ -31,7 +31,7 @@ namespace ProyectoDAI
         private void Button_Iniciar_Sesion(object sender, RoutedEventArgs e)
         {
             SqlConnection cnn = Conexion.AgregarConexion();
-            int inicioSesion = Conexion.Verificacion(txIDUsuario.Text, txContrasena.Text);
+            int inicioSesion = Arrendador.VerificacionArrendador(txRFCArrendador.Text, txContrasena.Text);
             switch (inicioSesion)
             {
                 case 1:
@@ -49,7 +49,7 @@ namespace ProyectoDAI
 
         private void Button_Registrar(object sender, RoutedEventArgs e)
         {
-            Window registrar = new Registrar();
+            RegistrarArrendador registrar = new RegistrarArrendador();
             this.Hide();
             registrar.Show();
         }

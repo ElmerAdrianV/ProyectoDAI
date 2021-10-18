@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace ProyectoDAI
 {
     /// <summary>
-    /// Interaction logic for Registrar.xaml
+    /// Interaction logic for RegistrarEdificio.xaml
     /// </summary>
-    public partial class Registrar : Window
+    public partial class RegistrarEdificio : Window
     {
-        public Registrar()
+        public RegistrarEdificio()
         {
             InitializeComponent();
         }

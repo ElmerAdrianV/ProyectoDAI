@@ -27,7 +27,7 @@ namespace ProyectoDAI
             try
             {
                 con = Conexion.AgregarConexion();
-                cmd = new SqlCommand(String.Format("SELECT nombreEdificio FROM Edificio WHERE RFCArrendador='{0}'",RFCarrendador), con);
+                cmd = new SqlCommand(String.Format("SELECT nombreEdificio FROM Edificio WHERE RFCArrendador='{0}'", RFCarrendador), con);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {

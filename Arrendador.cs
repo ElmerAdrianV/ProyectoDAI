@@ -11,14 +11,14 @@ namespace ProyectoDAI
 {
     class Arrendador
     {
-        public String RFC { get; set; }
-        public String nombre { get; set; }
-        public Int32 telefono { get; set; }
-        public String correo { get; set; }
-        public String contrasena;
+        public string RFC { get; set; }
+        public string nombre { get; set; }
+        public int telefono { get; set; }
+        public string correo { get; set; }
+        public string contrasena;
         public Arrendador(){
         }
-        public Arrendador(String RFC)
+        public Arrendador(string RFC)
         {
             this.RFC = RFC;
         }
@@ -61,7 +61,7 @@ namespace ProyectoDAI
             }
             return res;
         }
-        public int registraArrendador(String RFC, String nombre, Int64 telefono, String correo, String contrasena)
+        public int registraArrendador(string RFC, string nombre, Int64 telefono, string correo, string contrasena)
         {
             int res = -1;
             SqlConnection con;

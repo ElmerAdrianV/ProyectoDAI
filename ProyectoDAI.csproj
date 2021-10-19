@@ -55,18 +55,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Amenidad.cs" />
     <Compile Include="Arrendador.cs" />
+    <Compile Include="Arrendatario.cs" />
     <Compile Include="bdRommiesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>bdRommiesDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Contrato.cs" />
+    <Compile Include="Departamento.cs" />
+    <Compile Include="Edificio.cs" />
     <Compile Include="RegistrarArrendador.xaml.cs">
       <DependentUpon>RegistrarArrendador.xaml</DependentUpon>
     </Compile>
     <Compile Include="RegistrarEdificio.xaml.cs">
       <DependentUpon>RegistrarEdificio.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Reservacion.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -137,6 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="fondeRegistrar.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\fondoEntrada12.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

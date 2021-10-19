@@ -26,7 +26,6 @@ namespace ProyectoDAI
         private void Button_RegistrarArrendador(object sender, RoutedEventArgs e)
         {
             Arrendador a = new Arrendador();
-            MessageBox.Show(tbRFC.Text+ tbNombre.Text+ Int64.Parse(tbTelefono.Text)+ tbCorreo.Text+ tbContrasena.Text);
             try
             {
                 a.registraArrendador(tbRFC.Text, tbNombre.Text, Int64.Parse(tbTelefono.Text), tbCorreo.Text, tbContrasena.Text);
@@ -35,8 +34,9 @@ namespace ProyectoDAI
                 MessageBox.Show("error" +e);
             }
             this.Hide();
-            RegistrarEdificio w = new RegistrarEdificio();
+            ControlEdificios w = new ControlEdificios();
             w.Show();
         }
+
     }
 }

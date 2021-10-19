@@ -64,6 +64,12 @@
       <DependentUpon>bdRommiesDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Contrato.cs" />
+    <Compile Include="ControlDepartamento.xaml.cs">
+      <DependentUpon>ControlDepartamento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlEdificios.xaml.cs">
+      <DependentUpon>ControlEdificios.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Departamento.cs" />
     <Compile Include="Edificio.cs" />
     <Compile Include="RegistrarArrendador.xaml.cs">
@@ -73,6 +79,14 @@
       <DependentUpon>RegistrarEdificio.xaml</DependentUpon>
     </Compile>
     <Compile Include="Reservacion.cs" />
+    <Page Include="ControlDepartamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlEdificios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -146,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\fondoEntrada12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\controlEdificio.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

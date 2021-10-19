@@ -18,6 +18,10 @@ namespace ProyectoDAI
         public String contrasena;
         public Arrendador(){
         }
+        public Arrendador(String RFC)
+        {
+            this.RFC = RFC;
+        }
         public Arrendador(String RFC, String nombre, Int32 telefono, String correo, String contrasena)
         {
             this.RFC=RFC;
@@ -72,6 +76,28 @@ namespace ProyectoDAI
             
             
             return res;
+        }
+        public String obtenerNombre(String RFCarrendador)
+        {
+            SqlDataReader dr;
+            SqlConnection con;
+            SqlCommand cmd;
+            String nombreA="";
+            try
+            {
+                con = Conexion.AgregarConexion();
+                cmd = new SqlCommand(String.Format("SELECT nombre FROM Arrendador WHERE RFCArrendador='{0}'", RFCarrendador), con);
+                dr = cmd.ExecuteReader();
+                dr.Read();
+                nombreA=dr.GetString(0);    
+                dr.Close();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("error: " + ex);
+            }
+            return nombreA;
         }
     }
 }

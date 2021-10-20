@@ -35,7 +35,9 @@ namespace ProyectoDAI
             switch (inicioSesion)
             {
                 case 1:
+                    ControlEdificios w = new ControlEdificios(txRFCArrendador.Text);
                     this.Hide();
+                    w.Show();
                     break;
                 case 2:
                     MessageBox.Show("Contraseña incorrecta");

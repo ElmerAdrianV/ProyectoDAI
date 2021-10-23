@@ -46,11 +46,10 @@ namespace ProyectoDAI
         private void seleccionarEdificio(object sender, RoutedEventArgs e)
         {
             ControlDepartamento w = new ControlDepartamento(cbEdificios.SelectedItem.ToString(), RFCarrendador);
+            MessageBox.Show(cbEdificios.SelectedItem.ToString());
             this.Hide();
             w.Show();
         }
-
-        
 
         private void registrarEdificio(object sender, RoutedEventArgs e)
         {
@@ -58,7 +57,5 @@ namespace ProyectoDAI
             this.Hide();
             w.Show();
         }
-
-        
     }
 }

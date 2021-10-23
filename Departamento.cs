@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Controls;
+using System.Windows;
 
 namespace ProyectoDAI
 {
@@ -23,11 +24,11 @@ namespace ProyectoDAI
             try
             {
                 con = Conexion.AgregarConexion();
-                cmd = new SqlCommand(String.Format("SELECT idDepartamento FROM Departamento INNERJOIN Edificio ON Departamento.idEdificio=Edificio.idEdificio WHERE nombreEdificio='{0}'", nombreEdificio), con);
+                cmd = new SqlCommand(String.Format("SELECT idDepartamento FROM Departamento INNER JOIN Edificio ON Departamento.idEdificio=Edificio.idEdificio WHERE nombreEdificio='{0}'", nombreEdificio), con);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    cb.Items.Add(dr.GetString(0));
+                    cb.Items.Add(dr.GetInt16(0));
                 }
                 cb.SelectedIndex = 0;
                 dr.Close();
@@ -35,7 +36,7 @@ namespace ProyectoDAI
             }
             catch (Exception ex)
             {
-                //MessageBox.Show("error: " + ex);
+                MessageBox.Show("error: " + ex);
             }
         }
     }

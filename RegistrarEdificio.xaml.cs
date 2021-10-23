@@ -19,9 +19,15 @@ namespace ProyectoDAI
     /// </summary>
     public partial class RegistrarEdificio : Window
     {
+        public string RFCarrendador;
         public RegistrarEdificio()
         {
             InitializeComponent();
+        }
+        public RegistrarEdificio(string RFCarrendador)
+        {
+            InitializeComponent();
+            this.RFCarrendador = RFCarrendador;
         }
     }
 }

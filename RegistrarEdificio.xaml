@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="RegistrarEdificio" Height="450" Width="800">
     <Grid>
-        Hola
+        
     </Grid>
 </Window>
